@@ -36,4 +36,12 @@ public class Bank {
         }
         return null;
     }
+    public boolean ExitingAccount(int accountNumber){
+        for(Account acc : accounts){
+            if(acc.accountNumber == accountNumber){
+                return true;
+            }
+        }
+        return false;
+    }
 }

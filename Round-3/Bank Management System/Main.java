@@ -25,6 +25,12 @@ public class Main {
 
                     System.out.print("Enter Account Number: ");
                     acc.accountNumber = sc.nextInt();
+                    
+                    if(bank.ExitingAccount(acc.accountNumber)){
+                        System.out.println("Account Number already exists.");
+                        break;
+                    }
+                    
                     sc.nextLine(); // Consume newline
 
                     System.out.print("Enter Account Holder Name: ");
@@ -115,6 +121,8 @@ public class Main {
                     else{
                         System.out.println("Login Failed.");
                     }
+
+                break;
                 case 5:
                     System.out.println("Thank You! Visit Again.");
                     sc.close();
