@@ -22,10 +22,10 @@ public class Main{
                     int customerId = sc.nextInt();
 
                     System.out.println("Enter Pickup Point: ");
-                    String pickup = sc.next().toUpperCase();
+                    char pickup = sc.next().toUpperCase().charAt(0);
 
                     System.out.println("Enter Drop Point: ");
-                    String drop = sc.next().toUpperCase();
+                    char drop = sc.next().toUpperCase().charAt(0);
 
                     System.out.println("Enter Pickup Time: ");
                     int pickupTime = sc.nextInt();

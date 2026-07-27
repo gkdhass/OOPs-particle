@@ -1,11 +1,11 @@
 public class Customer{
 
     private int customerId;
-    private String pickup;
-    private String drop;
+    private char pickup;
+    private char drop;
     private int pickupTime;
 
-    public Customer(int customerId, String pickup, String drop, int pickupTime){
+    public Customer(int customerId, char pickup, char drop, int pickupTime){
         this.customerId = customerId;
         this.pickup = pickup;
         this.drop = drop;
@@ -16,11 +16,11 @@ public class Customer{
         return customerId;
     }
 
-    public String getpickup(){
+    public char getpickup(){
         return pickup;
     }
 
-    public String getdrop(){
+    public char getdrop(){
         return drop;
     }
 
